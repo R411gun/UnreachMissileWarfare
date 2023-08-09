@@ -27,7 +27,7 @@ public class Mine extends SlimefunItem implements Listener {
                 if (type == Material.BEDROCK || type == Material.ICE){
                     return;
                 }
-                blockPlaceEvent.getBlockPlaced().setType(Material.STRING);
+                blockPlaceEvent.getBlockPlaced().setType(Material.STONE_BUTTON);
             }
         };
         addItemHandler(placeHandler);
