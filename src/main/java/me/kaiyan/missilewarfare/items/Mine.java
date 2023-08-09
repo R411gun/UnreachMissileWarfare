@@ -21,12 +21,7 @@ public class Mine extends SlimefunItem implements Listener {
 
 
         BlockPlaceHandler placeHandler = new BlockPlaceHandler(false) {
-            @Override
-            public void onPlayerPlace(BlockPlaceEvent blockPlaceEvent) {
-                Material type = blockPlaceEvent.getBlockAgainst().getType();
-                if (type == Material.BEDROCK || type == Material.ICE){
-                }
-                blockPlaceEvent.getBlockPlaced().setType(Material.LIGHT);
+                blockPlaceEvent.getBlockPlaced().setType(Material.STRING);
             }
         };
         addItemHandler(placeHandler);
